@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #home {
+      background: #007bff;
+      color: white;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #home h2 {
+      font-size: 40px;
+    }
+
+    #about, #skills, #projects, #contact {
+      background: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 40px;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skills-list div {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .project-card {
+      background: #eee;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    form input, form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Ayushi</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Hello, I'm Ayushi Tripathi 👋</h2>
+  <p>B.Tech CSIT Student | Web Developer | DSA Learner</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a 3rd year B.Tech student at ITER, Bhubaneswar.  
+    I am passionate about Web Development and Data Structures & Algorithms.  
+    Currently preparing for placements and building projects.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-list">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Java</div>
+    <div>DSA</div>
+    <div>Python</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>This is my personal portfolio website built using HTML & CSS.</p>
+  </div>
+  <div class="project-card">
+    <h3>To-Do App</h3>
+    <p>A simple task manager using JavaScript.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return submitForm()">
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Ayushi Portfolio</p>
+</footer>
+
+<script>
+  function submitForm() {
+    alert("Message sent successfully!");
+    return false;
+  }
+</script>
+
+</body>
+</html>
